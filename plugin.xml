@@ -1,0 +1,25 @@
+    <?xml version="1.0" encoding="UTF-8"?>
+    <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+            id="com.lobsterclawsoftware.ipadOrientationPortrait" version="1.1">
+       
+        <name>Orientation</name>
+        <description>iPad Portrait Orientation Lock</description>
+        <license>MIT</license>
+        <keywords>ipad,orientation,lock</keywords>
+       
+        <platform name="ios">
+
+            <config-file target="*-Info.plist" parent="UISupportedInterfaceOrientations~ipad" overwrite="true">
+                <string></string>
+            </config-file>
+           
+            <config-file target="*-Info.plist" parent="UISupportedInterfaceOrientations~ipad" overwrite="true">
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+            </config-file>
+
+        </platform>
+       
+    </plugin>
+
